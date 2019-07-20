@@ -8,8 +8,20 @@ export class SudokuValidationService {
 
   constructor() { }
 
-  validate(sudokuContent: number[]) {
-
+  validate(sudokuContent: Sudoku) {
+    console.log('Checking...');
+    let result = this.checkIfFilled(sudokuContent);
+    if (result) {
+      result = this.checkRows(sudokuContent);
+    }
+    if (result) {
+      result = this.checkColumns(sudokuContent);
+    }
+    if (result) {
+      result = this.checkBlocks(sudokuContent);
+    }
+    console.log('result: ' + result);
+    return result;
   }
 
   checkIfFilled(sudoku: Sudoku) {

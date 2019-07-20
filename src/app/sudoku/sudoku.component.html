@@ -1,1 +1,12 @@
 <p>sudoku works!</p>
+<table class="table table-hover" class="table">
+    <tr *ngFor="let row of sudoku.sudokuTable; index as i" class="example-form">
+        <td *ngFor="let element of row; index as j" class="example-form">
+            <mat-form-field class="example-full-width formFieldWidth25">
+                <input matInput [(ngModel)]="element">
+            </mat-form-field>
+        </td>
+    </tr>
+</table>
+
+<button mat-button (click)="check()">Check</button>
