@@ -1,0 +1,8 @@
+<p>launcher works!</p>
+<mat-select [(value)]="selected">
+    <mat-option *ngFor="let sudoku of sudokus" [value]="sudoku.id"> 
+        {{sudoku.id}}
+    </mat-option>
+</mat-select>
+
+<a [routerLink]="['/sudoku', selected]">Start</a>

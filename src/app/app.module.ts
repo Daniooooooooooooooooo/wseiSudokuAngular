@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SudokuModule } from './sudoku/sudoku.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
+import { LauncherModule } from './launcher/launcher.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     SudokuModule,
-    BrowserAnimationsModule,
-    MatButtonModule
+    LauncherModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

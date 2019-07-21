@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SudokuComponent } from './sudoku.component';
+import { LauncherComponent } from './launcher.component';
 
 
 const routes: Routes = [
-  { path: 'sudoku/:id', component: SudokuComponent},
+  { path: 'launcher', component: LauncherComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SudokuRoutingModule { }
+export class LauncherRoutingModule { }

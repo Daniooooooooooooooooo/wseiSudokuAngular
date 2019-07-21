@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/sudoku'},
+  { path: '', pathMatch: 'full', redirectTo: '/launcher'},
 ];
 
 @NgModule({
